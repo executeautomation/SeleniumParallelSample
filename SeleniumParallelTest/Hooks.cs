@@ -13,6 +13,7 @@ namespace SeleniumParallelTest
     }
 
 
+    //Fixture for class
     [TestFixture]
     public class Hooks : Base
     {
