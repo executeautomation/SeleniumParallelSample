@@ -4,6 +4,7 @@ using OpenQA.Selenium.Firefox;
 
 namespace SeleniumParallelTest
 {
+    //Enum for browserType
     public enum BrowerType
     {
         Chrome,
