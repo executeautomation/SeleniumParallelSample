@@ -35,17 +35,18 @@ namespace SeleniumParallelTest
 
         private void ChooseDriverInstance(BrowerType browserType)
         {
-            var driverDir = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembl‌​y().Location);
+            //var driverDir = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembl‌​y().Location);
 
             if (browserType == BrowerType.Chrome)
-                Driver = new ChromeDriver(driverDir);
+                Driver = new ChromeDriver();
             else if (browserType == BrowerType.Firefox)
             {
-                FirefoxDriverService service = FirefoxDriverService.CreateDefaultService(driverDir, "geckodriver.exe");
-                service.FirefoxBinaryPath = @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe";
-                service.HideCommandPromptWindow = true;
-                service.SuppressInitialDiagnosticInformation = true;
-                Driver = new FirefoxDriver(service);
+                //FirefoxDriverService service = FirefoxDriverService.CreateDefaultService(driverDir, "geckodriver.exe");
+                //service.FirefoxBinaryPath = @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe";
+                //service.HideCommandPromptWindow = true;
+                //service.SuppressInitialDiagnosticInformation = true;
+                //Driver = new FirefoxDriver(service);
+                Driver = new ChromeDriver();
             }
         }
 
